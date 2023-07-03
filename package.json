@@ -1,0 +1,23 @@
+{
+  "name": "worktables",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd worktables-frontend && yarn start\" \"cd worktables-backend && yarn start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrosgmagalhaes/worktables_interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrosgmagalhaes/worktables_interview/issues"
+  },
+  "homepage": "https://github.com/pedrosgmagalhaes/worktables_interview#readme",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
