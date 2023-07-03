@@ -32,14 +32,14 @@ const CountryModal: React.FC<CountryModalProps> = ({
     : []
 
   return (
-    <DialogContentContainer type={DialogContentContainer.types.POPOVER}>
+    <DialogContentContainer type={DialogContentContainer.types.POPOVER} >
       <div style={{ display: "flex", flexWrap: "wrap" }}>
         {weatherDetails.map((detail, index) => (
           <div
             key={index}
             style={{ flex: "1 1 calc(50% - 8px)", margin: "2px" }}
           >
-            <p>{`${detail.label}: ${detail.value}`}</p>
+            <p style={{backgroundColor: "#fff",  borderRadius: "8px"}}>{`${detail.label}: ${detail.value}`}</p>
           </div>
         ))}
       </div>
