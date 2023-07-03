@@ -35,7 +35,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
       </Title>
       <div style={{ position: "relative", maxWidth: "25rem" }}>
         <TextField
-          placeholder="Enter the country name"
+          placeholder="Search for a country"
           size={TextField.sizes.LARGE}
         />
         <Icon

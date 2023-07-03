@@ -1,4 +1,4 @@
-// controllers/weatherController.ts
+// worktables-backend/src/controllers/weatherController.ts
 
 import { Request, Response } from 'express';
 import WeatherService from '../services/weatherService';

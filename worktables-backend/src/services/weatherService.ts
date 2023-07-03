@@ -1,4 +1,5 @@
-// services/weatherService.ts
+// worktables-backend/src/services/weatherService.ts
+
 import axios from 'axios';
 import { WEATHER_API_URL } from '../utils/constants';
 

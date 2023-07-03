@@ -1,4 +1,4 @@
-// routes/index.ts
+// worktables-backend/src/routes/index.ts
 import express from 'express';
 import WeatherController from '../controllers/weatherController';
 

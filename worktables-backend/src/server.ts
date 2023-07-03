@@ -1,4 +1,5 @@
-// server.ts
+// worktables-backend/src/server.ts
+
 import express from 'express';
 import cors from 'cors';
 import routes from './routes';

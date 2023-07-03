@@ -1,6 +1,6 @@
-# Worktables Frontend Application
+# Worktables Backend Application
 
-This is the frontend part of the Worktables project. It is bootstrapped with Create React App and uses TypeScript and the Monday.com React UI Components Library.
+This is the backend part of the Worktables project. It is built using Node.js, Express.js and TypeScript.
 
 ## Getting Started
 ### Prerequisites
@@ -41,10 +41,9 @@ In the project directory, you can run:
 - yarn eject: Removes the single build dependency from your project
 
 ### Built With
-- Create React App
-- React
-- Typescript
-- Monday.com React UI Components Library
+- Node.js
+- Express.js
+- TypeScript
 
 ## License
 This project uses the following license: MIT.
