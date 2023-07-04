@@ -1,10 +1,11 @@
 // worktables-frontend/src/components/SearchBar.tsx
 import React, { ChangeEvent } from "react"
-import { TextField, Title, Icon } from "monday-ui-react-core"
+import { TextField, Title, Icon, Loader } from "monday-ui-react-core"
 import { Country, Search } from "monday-ui-react-core/icons"
 import { SearchBarProps } from "../types/SearchBar"
 
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch, isFetching }) => {
+
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value
     onSearch(value)
@@ -38,11 +39,29 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           placeholder="Search for a country"
           size={TextField.sizes.LARGE}
         />
-        <Icon
-          icon={Search}
-          iconSize={25}
-          style={{ position: "absolute", right: "10px", top: "10px" }}
-        />
+        {isFetching ? (
+          <div
+            style={{
+              position: "absolute",
+              right: "10px",
+              top: "10px",
+              color: "var(--icon-color)",
+            }}
+          >
+            <Loader size={25} color={Loader.colors.PRIMARY} />
+          </div>
+        ) : (
+          <Icon
+            icon={Search}
+            iconSize={25}
+            style={{
+              position: "absolute",
+              right: "10px",
+              top: "10px",
+              color: "var(--icon-color)",
+            }}
+          />
+        )}
       </div>
     </div>
   )

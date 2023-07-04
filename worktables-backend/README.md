@@ -21,7 +21,8 @@ yarn install
 ### Environment Variables
 To run this project, you will need to add the following environment variables to your .env file:
 
-PORT=4000
+- PORT=4000
+- WEATHERAPI_KEY=your_weather_api_key
 
 ## Running the Application
 You can run the frontend application in development mode using the following command:

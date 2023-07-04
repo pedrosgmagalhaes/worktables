@@ -1,6 +1,5 @@
 // worktables-frontend/src/services/weatherService.ts
 import axios from "axios"
-
 export const WEATHER_API_URL = 'http://localhost:4002/weather/';
 
 export async function fetchWeatherData(country: string) {
